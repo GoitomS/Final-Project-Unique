@@ -18,19 +18,18 @@ function uploadImage() {
         <div class="col my-4">
         <input type="file" id="imageUploadUrl" accept="image/png, image/jpg, image/webp, image/svg, image/jpeg"/>
     </div>`
-        
-
     });
     reader.readAsDataURL(this.files[0])
 }
 
 function productRegisteration() {
+   
     itemsController.addItem(itemName.value, itemCategory.value, itemSubCategory.value, itemPrice.value, itemDescription.value, uploadedImage)
-    console.log(itemsController.items)
+    // console.log(itemsController.items)
     const product = JSON.stringify(itemsController.items);
     localStorage.setItem('product', product)
-
-    // window.location.reload();
+    alert(`${itemName.value} has been saved`)
+    window.location.reload();
 }
 
 itemImageUrl.addEventListener('change', uploadImage)
@@ -39,4 +38,4 @@ itemSubmit.addEventListener('click', productRegisteration)
 let localProductsJson = localStorage.getItem('product');
 
 let localProducts = JSON.parse(localProductsJson)
-console.log(localProducts)
+// console.log(localProducts)
