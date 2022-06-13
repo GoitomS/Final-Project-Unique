@@ -98,4 +98,48 @@ margin-right: 4rem;
 #inlineRadio2 {
     margin-left: 8px;
 }
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width:800px;
+    margin: 50px auto;
+    padding:25px;
+}
+.mytabs input[type="radio"]{
+    display: none;
+}
+.mytabs label {
+    padding: 25px;
+    background: #e2e3e2;
+    font-weight: bold;
+}
+.tab {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0;
+    border-bottom: 1px solid black;
+}   
+.tab {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.mytabs .tab {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    order: 1;
+    display: none;
+}
+.mytabs .tab h2 {
+    font-size: 3em;
+}
+.mytabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+.mytabs input[type="radio"]:checked + label {
+    background: #fff;
+}
 
