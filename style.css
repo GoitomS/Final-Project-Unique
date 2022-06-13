@@ -76,6 +76,14 @@ margin-right: 4rem;
     padding: 6px 20px;
     /* margin-right: 50px; */
 }
+
+#submitProduct, #imageUpload {
+    background-color: rgb(39, 146, 154);
+    color: white;
+    border-radius: 3px;
+    border: 0em;
+    padding: 6px 20px;
+}
 .tab-content{
     margin-top: 200px;
 }

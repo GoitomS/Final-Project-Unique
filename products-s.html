@@ -53,55 +53,44 @@
     <br><br>
     <div class="row mx-3 mt-5">
       <h3>Add products</h3>
-      <br><br>
-        <div class="col-sm-6">
+        <div class="col-sm-6 text-center" id="productImageDisplay">
             <img src="data:image/jpeg;base64,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" width="450" length="450" class="rounded-3" alt="..." />
-            <br><br>
-            <div class="input-group justify-content-center">
-              <input type="search" class="form rounded" placeholder="Browse images" aria-label="Search" aria-describedby="search-addon" />
-              <button type="button" button id="button-one">Upload</button>
-            </div>
+            <div class="col my-4">
+              <input type="file" id="imageUploadUrl" accept="image/png, image/jpg, image/webp, image/svg, image/jpeg"/>
           </div>
+        </div>
         <div class="col-sm-6">
-          <input type="text" class="form-control rounded mb-3" placeholder="Enter Product Name" aria-label="Search" aria-describedby="search-addon" />          
+          <input type="text" class="form-control rounded mb-3" placeholder="Enter Product Name" aria-label="Search" aria-describedby="search-addon" id="productName" />          
             <div class="row g-2">
-              <div class="col-md">
+              <div class="col">
                 <div class="form-floating">
-                  <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                  <select class="form-select" id="selectCategory" aria-label="Floating label select example">
                     <option selected>Select Category</option>
-                    <option value="1">Accessories</option>
-                    <option value="2">Furniture</option>
-                    <option value="3">Lighting</option>
+                    <option value="accessories">Accessories</option>
+                    <option value="furniture">Furniture</option>
+                    <option value="lighting">Lighting</option>
                   </select>
                 </div>
               </div>
-              <div class="col-md">
-                <div class="form-floating">
-                  <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
-                    <option selected>Select Sub-Category</option>
-                    <option value="1">Category 1</option>
-                    <option value="2">Category 2</option>
-                    <option value="3">Category 3</option>
-                  </select>
-                </div>
+              <div class="col">
+                  <input type="text" class="form-control rounded mb-3 pb-4" placeholder="Enter Sub Category" aria-label="Search" aria-describedby="search-addon" id="subCategory" />   
               </div>
             </div>
             <hr>
             <div class="row py-1" style="margin-left: 3px;">
-            <div class="col-1" style="width: auto;">Enter Price<input type="number" class="form-control rounded mb-3" placeholder="Set Price" aria-label="Search" aria-describedby="search-addon" required/></div>
+            <div class="col-1" style="width: auto;">Enter Price<input type="number" class="form-control rounded mb-3" placeholder="Set Price" id="setPrice" aria-label="Search" aria-describedby="search-addon" required/></div>
             </div>
             <br>
             <div class="form-group">
               <label for="formControlTextarea margin-top: 3px">Enter Product Description</label>
-              <textarea class="form-control rounded-0" id="formControlTextarea" rows="3">Product description</textarea>
+              <textarea class="form-control rounded-0" id="productDescription" rows="3">Product description</textarea>
             </div>
             <br>
             
-            <div class="col-lg-6 pt-3"><button id="button-one" class="btn text-end " type="submit">Add to Products</button>
+            <div class="col-lg-6 pt-3"><button id="submitProduct" class="btn text-end " type="submit">Add to Products</button>
             </div><br>
           </div>
-        </div>
-    </div>
+      </div>
     </div>       
      <br><br>
      
