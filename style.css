@@ -99,3 +99,16 @@ margin-right: 4rem;
     margin-left: 8px;
 }
 
+.shopping-item {
+    height: 521;
+    width: 450px;
+}
+
+.shopping-chart {
+    height: 450;
+    width: 350px;
+}
+
+a {
+    text-decoration: none;
+}
