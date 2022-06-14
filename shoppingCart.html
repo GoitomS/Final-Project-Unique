@@ -37,7 +37,7 @@
             <a class="nav-link active" href="#">Contact Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#"><i class="bi bi-cart3"></i>View Cart</a>
+            <a class="nav-link active" href="./shoppingCart.html"><i class="bi bi-cart3"></i>View Cart</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="./login.html"><i class="bi bi-file-person-fill"></i></a>
@@ -46,13 +46,13 @@
       </div>
   </nav>
 <!-- Nav ends here -->
-    <div class="container-fluid" style="padding-top: 150px;"> 
+    <div class="container-fluid"> 
         <div class="mytabs">
             <input type="radio" id="tabcart" name="mytabs" checked="checked">
-            <label for="tabcart">1. Shopping Cart</label>
+            <label for="tabcart"> 1. Shopping Cart</label>
             <div class="tab">
                 <div class="row">
-                    <div class="col-md-6 py-3">
+                    <div class="col-md-6 col-md-4 py-3">
                         <h3 class="card-title" style="border-bottom: 1px solid #8c8b8b; width: 450px; padding-bottom: 18px;">Shopping Cart</h3>
                         <div class="row">
                             <div class="col-6 col-md-4">
@@ -93,7 +93,7 @@
                             <div class="col-6 col-md-6">
                                 <p>SUBTOTAL</p> 
                             </div>
-                            <div class="col-6 col-md-6 px-md-6">
+                            <div class="col-6 col-md-6 px-md-4">
                                 <p>$600</p> 
                             </div>
                         </div>
@@ -101,7 +101,7 @@
                             <div class="col-6 col-md-6">
                                 <p>SHIPPING</p> 
                             </div>
-                            <div class="col-6 col-md-6 px-md-6">
+                            <div class="col-6 col-md-6 px-md-4">
                                 <p>$11.56</p> 
                             </div>
                         </div>
@@ -109,7 +109,7 @@
                             <div class="col-6 col-md-6">
                                 <p>TAXES</p> 
                             </div>
-                            <div class="col-6 col-md-6 px-md-6">
+                            <div class="col-6 col-md-6 px-md-4">
                                 <p>$61.16</p> 
                             </div>
                         </div>
@@ -117,12 +117,12 @@
                             <div class="col-6 col-md-6">
                                 <p style="border-top: 1px solid #8c8b8b; width: 250px; padding-top: 5px;">TOTAL</p> 
                             </div>
-                            <div class="col-6 col-md-6 px-md-6">
+                            <div class="col-6 col-md-6 px-md-4">
                                 <p>$672.72</p> 
                             </div>
                         </div>       
                     </div>
-                    <div class="button" style="border-top: 1px solid #8c8b8b; width: 450px; padding-bottom: 18px; padding-top: 15px;">
+                    <div class="button" style="border-top: 1px solid #8c8b8b; width: 350px; padding-bottom: 18px; padding-top: 15px;">
                         <button type="button" class="btn btn-primary btn-sm">Proceed to Address</button>
                         <button type="button" class="btn btn-primary btn-sm" disabled>Continue Shopping</button>
                     </div>
@@ -133,8 +133,8 @@
             <div class="tab">
                 <div class="row">
                     <div class="col-md-6 py-4">
-                        <h3>Shipping</h3>
-                        <h6 class="card-title px-4" style="border-bottom: 1px solid #8c8b8b; width: 500px; padding-bottom: 14px; padding-top: 19px;"><small>Add shipping address</small></h6>
+                        <h3 class="card-title" style="border-bottom: 1px solid #8c8b8b; width: 380px; padding-bottom: 10px; padding-top: 17px;">Shipping <br><small class="px-4">Add shipping address</small></h3>
+                        
                         <form>
                             <div class="row">
                                 <div class="col-6 col-md-6">
@@ -192,7 +192,7 @@
                                 </div>    
                             </div>
                             </div>
-                            <div class="row" style="border-top: 1px solid #8c8b8b; width: 280px; padding-bottom: 5px; padding-top: 5px;">
+                            <div class="row" style="border-top: 1px solid #8c8b8b; width: 350px; padding-bottom: 5px; padding-top: 5px;">
                                 <div class="check">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                     <label class="form-check-label py-0" for="flexCheckDefault" style="background-color: white;"> Free Shipping <br><small>5-7 working days</small>
@@ -269,7 +269,7 @@
                             </div>
                         </div>       
                     </div>
-                    <div class="button" style="border-top: 1px solid #8c8b8b; width: 500px; padding-bottom: 18px; padding-top: 15px;">
+                    <div class="button" style="border-top: 1px solid #8c8b8b; width: 350px; padding-bottom: 18px; padding-top: 15px;">
                         <button type="button" class="btn btn-primary btn-sm">Proceed to Payment</button>
                         <button type="button" class="btn btn-primary btn-sm" disabled>Cancel</button>
         
@@ -281,83 +281,61 @@
             <input type="radio" id="tabpayment" name="mytabs">
             <label for="tabpayment">3. Payment</label>
             <div class="tab">
-                <h1 class="display-6">Payment</h1>
-                <h6>Choose payment method</h6>
-                <ul>
-                    <li data-tab-target="#creditCard" class="active tab">Credit Card</li>
-                    <li data-tab-target="#paypal" class="tab">Pay Pal</li>
-                    <li data-tab-target="#amazon" class="tab">Amazon</li>
-                </ul>
-                <div class="tab-content">
-                    <div id="creditCard" data-tab-content class="active">
-                        <h1>Credit Card</h1>
-                        <div class="tab-content">
-                            <div class="row">
-                                <div class="col-6">
-                                    <h3> Billing Info </h3>
-                                    <div class="form-group"> 
-                                        <label for="username"> FULL NAME </label> 
-                                        <input type="text" name="username" placeholder="John Doe" required class="form-control ">
-                                    </div>
-                                    <div class="form-group"> 
-                                        <label for="address"> ADDRESS </label> 
-                                        <input type="text" name="address" placeholder="497 Evergreen Rd." required class="form-control ">
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="form-group"> 
-                                                <label for="city"> CITY </label> 
-                                                <input type="text" name="city" placeholder="Richmond" required class="form-control ">
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="form-group"> 
-                                                <label for="zipcode"> CITY </label> 
-                                                <input type="text" name="zipCode" placeholder="23216" required class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="form-group"> 
-                                            <label for="country">COUNTRY</label> 
-                                            <input type="text" name="country" placeholder="United States" required class="form-control ">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <h3> Credit Card Info</h3>
-                                    <div class="form-group"> 
-                                        <label for="cardNumber"> CARD NUMBER <label>
-                                    <div class="input-group"> 
-                                        <input type="text" name="cardNumber" placeholder="1234 5678 3456 2456" class="form-control " required>
-                                        <div class="input-group-append"><span class="input-group-text text-muted"><i class="fa-brands fa-cc-visa"></i></span>
-                                        </div>
-                                    </div>
-                                    <div class="form-group"> 
-                                    <label><span class="hidden-xs">Expiration data-bs-target</span></label>
-                                    <div class="input-group"> 
-                                        <input type="number" placeholder="MM" class="form-control" required> <input type="number" placeholder="YY" class="form-control" required> 
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="form-group mb-4"> 
-                                            <label data-toggle="tooltip" title="Three digit CV code on the back of your card">
-                                                <h6> CVV <i class="fa fa-question-circle d-inline"></i></h6>
-                                            </label> 
-                                            <input type="text" required class="form-control"> 
-                                        </div>
-                                    </div>
+                <h1 class="display">Payment</h1>
+            <div class="tab-content">     
+                <div class="row border">
+                    <div class="col-6">
+                        <h3> Billing Info </h3>
+                        <div class="form-group py-0"> 
+                            <label for="username"> FULL NAME </label> 
+                            <input type="text" name="username" placeholder="John Doe" required class="form-control ">
+                        </div>
+                        <div class="form-group"> 
+                            <label for="address"> ADDRESS </label> 
+                            <input type="text" name="address" placeholder="497 Evergreen Rd." required class="form-control ">
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group"> 
+                                    <label for="city"> CITY </label> 
+                                    <input type="text" name="city" placeholder="Richmond" required class="form-control ">
                                 </div>
                             </div>
+                            <div class="col-6">
+                                <div class="form-group"> 
+                                    <label for="zipcode"> Zip Code </label> 
+                                    <input type="text" name="zipCode" placeholder="23216" required class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group"> 
+                                <label for="country">COUNTRY</label> 
+                                <input type="text" name="country" placeholder="United States" required class="form-control ">
+                            </div>
+                        </div>
                     </div>
-                    <div id="payPal" data-tab-content>
-                        <h1>Paypal</h1>
-                        <h6 class="pb-2">Select your paypal account type</h6>
-                            <div class="form-group "> <label class="radio-inline"> <input type="radio" name="optradio" checked> Domestic </label> <label class="radio-inline"> <input type="radio" name="optradio" class="ml-5">International </label></div>
-                            <p> <button type="button" class="btn btn-primary "><i class="fab fa-paypal mr-2"></i> Log into my Paypal</button> </p>
-                            <p class="text-muted"> Note: After clicking on the button, you will be directed to a secure gateway for payment. After completing the payment process, you will be redirected back to the website to view details of your order. </p>
+                    <div class="col-6">
+                        <h3> Credit Card Info</h3>
+                        <div class="form-group"> 
+                            <label for="cardNumber"> CARD NUMBER <label>
+                        <div class="input-group"> 
+                            <input type="text" name="cardNumber" placeholder="1234 5678 3456 2456" class="form-control " required>
+                            <div class="input-group-append"><span class="input-group-text text-muted"><i class="fa-brands fa-cc-visa"></i></span>
+                            </div>
+                        </div>
+                        <div class="form-group"> 
+                        <label><span class="hidden-xs">Expiration data</span></label>
+                        <div class="input-group"> 
+                            <input type="number" placeholder="MM" class="form-control" required> <input type="number" placeholder="YY" class="form-control" required> 
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group mb-4"> 
+                                <label data-toggle="tooltip" title="Three digit CV code on the back of your card">
+                                    <h6> CVV <i class="fa fa-question-circle d-inline"></i></h6>
+                                </label> 
+                                <input type="text" required class="form-control"> 
+                            </div>
+                        </div>
                     </div>
-                    <div id="amazon" data-tab-content>
-                        <h1>Amazon</h1>
-                        <p>This is amazon card payment method</p>
-                    </div>    
                 </div>   
                 </div>
             </div>
@@ -365,7 +343,6 @@
                 
                     
                 
-
             </div>
         </div>
 

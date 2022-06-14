@@ -4,7 +4,7 @@ class ItemsController {
         this.currentId = currentId;
     } 
     addItem(name, category, subCategory, price, description, picture){
-        const item = {
+        const newItem = {
             id: this.currentId++,
             name: name,
             category: category,
@@ -13,6 +13,20 @@ class ItemsController {
             description: description,
             picture: picture
         }
-        this.items.push(item);
+        this.items.push(newItem);
+    }
+    setLocalStorage() {
+        localStorage.setItem("item", JSON.stringify(this.items));
+        localStorage.setItem("currentID", JSON.stringify(this.currentId));
+    }
+
+    loadLocalStorage() {
+        this.items = JSON.parse(this.localStorage.getItem("item"))
+        this.currentId =<h1 class="display-6">Payment</h1>
+        <h6>Choose payment method</h6><h1 class="display-6">Payment</h1>
+        <h6>Choose payment method</h6><h1 class="display-6">Payment</h1>
+        <h6>Choose payment method</h6><h1 class="display-6">Payment</h1>
+        <h6>Choose payment method</h6><h1 class="display-6">Payment</h1>
+        <h6>Choose payment method</h6>
     }
 }
