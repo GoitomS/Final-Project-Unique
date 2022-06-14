@@ -287,7 +287,7 @@
                 <div class="row ">
                     <div class="col-6">
                         <h3> Billing Info </h3>
-                        <div class="form-group py-0"> 
+                        <div class="form-group"> 
                             <label for="username"> FULL NAME </label> 
                             <input type="text" name="username" placeholder="John Doe" required class="form-control ">
                         </div>
@@ -315,26 +315,28 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <h3> Credit Card Info</h3>
+                        <h3 class="px-3"> Credit Card Info</h3>
                         <div class="form-group"> 
-                            <label for="cardNumber"> CARD NUMBER <label>
+                            <label for="cardNumber">CARD NUMBER <label>
+                        </label>
                         <div class="input-group"> 
                             <input type="text" name="cardNumber" placeholder="1234 5678 3456 2456" class="form-control " required>
                             <div class="input-group-append"><span class="input-group-text text-muted"><i class="fa-brands fa-cc-visa"></i></span>
                             </div>
                         </div>
                         <div class="form-group"> 
-                        <label><span class="hidden-xs">Expiration data</span></label>
+                        <label>Expiration data</label>
+                        </div>
                         <div class="input-group"> 
                             <input type="number" placeholder="MM" class="form-control" required> <input type="number" placeholder="YY" class="form-control" required> 
                         </div>
-                        <div class="col-sm-4">
-                            <div class="form-group mb-4"> 
+                        <div class="col-sm-6">
+                            <div class="form"> 
                                 <label data-toggle="tooltip" title="Three digit CV code on the back of your card">
-                                    <h6> CVV <i class="fa fa-question-circle d-inline"></i></h6>
-                                </label> 
-                                
+                                    <h6> CVV <i class="fa fa-question-circle d-inline"></i></h6></label>
+                                <input type="text" name="CVV" placeholder="123" required class="form-control">   
                             </div>
+                            
                             
                         </div>
 
