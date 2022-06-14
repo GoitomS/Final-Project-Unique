@@ -27,4 +27,3 @@ if(localStorage.getItem('product')) {
 } else {
     localId = 0
 }
-
