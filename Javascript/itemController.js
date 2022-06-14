@@ -4,7 +4,7 @@ class ItemsController {
         this.currentId = localId + 1;
     } 
     addItem(name, category, subCategory, price, description, picture){
-        const newItem = {
+        const item = {
             id: this.currentId++,
             name: name,
             category: category,
@@ -13,9 +13,8 @@ class ItemsController {
             description: description,
             picture: picture
         }
-        this.items.push(newItem);
+        this.items.push(item);
     }
-
     setitems(localitems){
         this.items = localitems
         }
