@@ -1,7 +1,7 @@
 class ItemsController {
-    constructor(currentId = 0){
-        this.items = [];
-        this.currentId = currentId;
+    constructor(){
+        this.items = localitems;
+        this.currentId = localId + 1;
     } 
     addItem(name, category, subCategory, price, description, picture){
         const newItem = {
@@ -15,18 +15,16 @@ class ItemsController {
         }
         this.items.push(newItem);
     }
-    setLocalStorage() {
-        localStorage.setItem("item", JSON.stringify(this.items));
-        localStorage.setItem("currentID", JSON.stringify(this.currentId));
-    }
 
-    loadLocalStorage() {
-        this.items = JSON.parse(this.localStorage.getItem("item"))
-        this.currentId =<h1 class="display-6">Payment</h1>
-        <h6>Choose payment method</h6><h1 class="display-6">Payment</h1>
-        <h6>Choose payment method</h6><h1 class="display-6">Payment</h1>
-        <h6>Choose payment method</h6><h1 class="display-6">Payment</h1>
-        <h6>Choose payment method</h6><h1 class="display-6">Payment</h1>
-        <h6>Choose payment method</h6>
+    setitems(localitems){
+        this.items = localitems
+        }
     }
+let localitems = []
+let localId;
+if(localStorage.getItem('product')) {
+    localitems = JSON.parse(localStorage.getItem('product'))
+    localId = localitems[localitems.length - 1].id
+} else {
+    localId = 0
 }
