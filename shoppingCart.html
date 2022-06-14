@@ -53,7 +53,7 @@
             <div class="tab">
                 <div class="row">
                     <div class="col-md-6 col-md-4 py-3">
-                        <h3 class="card-title" style="border-bottom: 1px solid #8c8b8b; width: 450px; padding-bottom: 18px;">Shopping Cart</h3>
+                        <h3 class="card-title" style="border-bottom: 1px solid #8c8b8b; width: 350px; padding-bottom: 18px;">Shopping Cart</h3>
                         <div class="row">
                             <div class="col-6 col-md-4">
                                 <img src="./images/lamp-3.jpg" width="300" height="300" class="img-fluid rounded-start" alt="...">
@@ -122,18 +122,19 @@
                             </div>
                         </div>       
                     </div>
-                    <div class="button" style="border-top: 1px solid #8c8b8b; width: 350px; padding-bottom: 18px; padding-top: 15px;">
-                        <button type="button" class="btn btn-primary btn-sm">Proceed to Address</button>
-                        <button type="button" class="btn btn-primary btn-sm" disabled>Continue Shopping</button>
+                    <div class="button" style="border-top: 1px solid #8c8b8b; width: 350px; padding-bottom: 10px; padding-top: 10px;">
+                        <button type="button" id="button-one" class="btn btn-primary btn-sm">Proceed to Address</button>
+                        <button type="button" id="button-one" class="btn btn-primary btn-sm" disabled>Continue Shopping</button>
                     </div>
                 </div>
-            </div>
+            </div> <!--Shopping cart tab ends here-->
+            <!--Shipping tab starts here-->
             <input type="radio" id="tabshipping" name="mytabs">
             <label for="tabshipping"><i class="q1">Shipping</i></label>
             <div class="tab">
                 <div class="row">
                     <div class="col-md-6 py-4">
-                        <h3 class="card-title" style="border-bottom: 1px solid #8c8b8b; width: 380px; padding-bottom: 10px; padding-top: 17px;">Shipping <br><small class="px-4">Add shipping address</small></h3>
+                        <h3 class="card-title" style="border-bottom: 1px solid #8c8b8b; width: 350px; padding-bottom: 5px; padding-top: 5px;">Shipping <br><small class="px-4">Add shipping address</small></h3>
                         
                         <form>
                             <div class="row">
@@ -145,15 +146,15 @@
                                 </div>
                             </div>
                             <div class="row">
-                              <div class="col-12 py-3">
+                              <div class="col-12 py-2">
                                 <input type="text" class="form-control" id="inputAddress" placeholder="Address">
                               </div>
-                              <div class="col-12 py-3">
+                              <div class="col-12 py-2">
                                 <input type="text" class="form-control" id="inputaddress2" placeholder="Address 2">
                             </div>
 
                             <div class="row">
-                                <div class="col-6 py-3">
+                                <div class="col-6 py-2">
                                     <div class="input-group">
                                         <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" placeholder="State">
                                         <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
@@ -167,7 +168,7 @@
                                         </ul>
                                       </div>
                                 </div>
-                                <div class="col-6 py-3">
+                                <div class="col-6 py-2">
                                     <div class="input-group">
                                         <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" placeholder="City">
                                         
@@ -183,7 +184,7 @@
                                 </div>
                             </div>
                             </div>
-                            <div class="row py-3">
+                            <div class="row py-2">
                                 <div class="col-6">
                                     <input type="text" class="form-control" id="inputZip" placeholder="ZIP/Postal Code"> 
                                 </div>
@@ -192,18 +193,18 @@
                                 </div>    
                             </div>
                             </div>
-                            <div class="row" style="border-top: 1px solid #8c8b8b; width: 350px; padding-bottom: 5px; padding-top: 5px;">
-                                <div class="check">
+                            <div class="row">
+                                <div class="check py-6" style="border-top: 1px solid #8c8b8b; width: 350px; padding-bottom: 10px; padding-top: 15px;">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                     <label class="form-check-label py-0" for="flexCheckDefault" style="background-color: white;"> Free Shipping <br><small>5-7 working days</small>
                                     </label>
-                                  </div>  
+                                </div>  
                             </div>
                             
                         </form>
                     </div>
                     <div class="col-md-4 py-4">
-                        <h3 class="card-title" style="border-bottom: 1px solid #8c8b8b; width: 350px; padding-bottom: 30px; padding-top: 30px;">Summary</h3>
+                        <h3 class="card-title" style="border-bottom: 1px solid #8c8b8b; width: 350px; padding-bottom: 10px; padding-top:25px;">Summary</h3>
                         <div class="row">
                             <div class="col-6 col-md-6 ">
                                 <img src="./images/lamp-3.jpg" width="200" height="200" class="img-fluid rounded-start" alt="...">
@@ -217,7 +218,7 @@
                             <div class="col-6 col-md-6  py-4">
                                 <img src="./images/lamp-2.jpg" width="200" height="200" class="img-fluid rounded-start" alt="...">
                             </div>
-                            <div class="col-6 py-4">
+                            <div class="col-6 py-2">
                                 <p class="card-text">Product Name</p>
                                 <p class="card-text"><small class="text-muted">$300.00</small></p>  
                             </div>
@@ -270,20 +271,20 @@
                         </div>       
                     </div>
                     <div class="button" style="border-top: 1px solid #8c8b8b; width: 350px; padding-bottom: 18px; padding-top: 15px;">
-                        <button type="button" class="btn btn-primary btn-sm">Proceed to Payment</button>
-                        <button type="button" class="btn btn-primary btn-sm" disabled>Cancel</button>
+                        <button type="button" id="button-one" class="btn btn-primary btn-sm ">Proceed to Payment</button>
+                        <button type="button" id="button-one" class="btn btn-primary btn-sm" disabled>Cancel</button>
         
                     </div>
                 </div>
 
-            </div>
-            <!--Shipping tab ends here-->
+            </div> <!--Shipping tab ends here-->
+            
+            <!--Payment tab starts here-->
             <input type="radio" id="tabpayment" name="mytabs">
             <label for="tabpayment"><i class="q1">Payment</i></label>
             <div class="tab">
-                <h1 class="display">Payment</h1>
-            <div class="tab-content">     
-                <div class="row border">
+               <div class="tab-content">     
+                <div class="row ">
                     <div class="col-6">
                         <h3> Billing Info </h3>
                         <div class="form-group py-0"> 
@@ -332,12 +333,18 @@
                                 <label data-toggle="tooltip" title="Three digit CV code on the back of your card">
                                     <h6> CVV <i class="fa fa-question-circle d-inline"></i></h6>
                                 </label> 
-                                <input type="text" required class="form-control"> 
+                                
                             </div>
+                            
                         </div>
+
                     </div>
                 </div>   
                 </div>
+                <div class="py-2" style="text-align: center;">
+                    <button type="button" id="button-one" class="btn btn-primary btn-sm py-2">Pay</button>
+                </div>
+                
             </div>
         </div>
                 
